@@ -9,15 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1DB17EB-3D3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0FAEBB8F-17E3-4A0B-80C3-AEEEA1C16316}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{012FB29A-06C8-4A63-9D09-C2C131DF48F5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3CBB872C-3B55-4D26-BC92-FA16DDDA2E10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4717F725-B003-4A7F-96C8-46F65F83C0ED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{8C09EC47-7D4B-4868-B720-59B325F20A76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Infrastructure", "MiniInventory.Service\MiniInventory.Infrastructure.csproj", "{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Infrastructure.Sql", "MiniInventory.Service\MiniInventory.Infrastructure.Sql.csproj", "{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.API", "MiniInventory.API\MiniInventory.API.csproj", "{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}"
 EndProject
