@@ -1,0 +1,42 @@
+# Compiled files
+bin/
+obj/
+
+# Visual Studio files
+*.csproj.FileListAbsolute.txt
+*.csproj.user
+*.csproj.vspscc
+*.vssscc
+*.vspscc
+*.suo
+*.user
+*.sln.docstates
+.vsidx
+.http
+
+# Build output
+**/build/
+
+# NuGet Packages
+**/packages/*
+**/packages/**/*
+**/packages/**/**/*
+
+# Testing output
+**/test-results/**/*
+
+# Dotnet Tools
+**/dotnet-tools/**/*
+
+# Launch profiles
+Properties/launchSettings.json
+
+# User-specific VS Code files
+**/*.vscode/*.code-workspace
+**/*.vscode/tasks.json
+**/*.vscode/launch.json
+**/*.vscode/settings.json
+
+# Migrate .NET 5+ logs
+**/Migrate/**/*
+/.vs/MiniInventory
