@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Core", "MiniInventory.Core\MiniInventory.Core.csproj", "{671F7E28-CFC3-4D62-BF64-6B77990A8247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Core.Domain", "MiniInventory.Core\MiniInventory.Core.Domain.csproj", "{671F7E28-CFC3-4D62-BF64-6B77990A8247}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1DB17EB-3D3B-4AB6-A6FA-3EC6A65FB6D7}"
 EndProject
@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{012FB29A-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3CBB872C-3B55-4D26-BC92-FA16DDDA2E10}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{4717F725-B003-4A7F-96C8-46F65F83C0ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4717F725-B003-4A7F-96C8-46F65F83C0ED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{8C09EC47-7D4B-4868-B720-59B325F20A76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Service", "MiniInventory.Service\MiniInventory.Service.csproj", "{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Infrastructure", "MiniInventory.Service\MiniInventory.Infrastructure.csproj", "{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.API", "MiniInventory.API\MiniInventory.API.csproj", "{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.API", "MiniInventory.API\MiniInventory.API.csproj", "{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Core.Services", "MiniInventory.Core.Service\MiniInventory.Core.Services.csproj", "{19606FF3-1042-4C9E-AD98-48FE692E9FE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{8C09EC47-7D4B-4868-B720-59B325F20A76} = {D1DB17EB-3D3B-4AB6-A6FA-3EC6A65FB6D7}
 		{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C} = {4717F725-B003-4A7F-96C8-46F65F83C0ED}
 		{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD} = {8C09EC47-7D4B-4868-B720-59B325F20A76}
+		{19606FF3-1042-4C9E-AD98-48FE692E9FE6} = {3CBB872C-3B55-4D26-BC92-FA16DDDA2E10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE6DAA49-F664-495C-A432-33E6F64ED679}

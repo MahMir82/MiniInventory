@@ -10,4 +10,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniInventory.Core.Service\MiniInventory.Core.Services.csproj" />
+    <ProjectReference Include="..\MiniInventory.Core\MiniInventory.Core.Domain.csproj" />
+    <ProjectReference Include="..\MiniInventory.Service\MiniInventory.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
