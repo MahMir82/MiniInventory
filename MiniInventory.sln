@@ -8,6 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1DB17EB-3D3B-4AB6-A6FA-3EC6A65FB6D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0FAEBB8F-17E3-4A0B-80C3-AEEEA1C16316}"
+	ProjectSection(SolutionItems) = preProject
+		..\Docs\Behvar-Mini-Project.pages.pdf = ..\Docs\Behvar-Mini-Project.pages.pdf
+		..\Docs\DBScripts.sql = ..\Docs\DBScripts.sql
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3CBB872C-3B55-4D26-BC92-FA16DDDA2E10}"
 EndProject
@@ -19,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.API", "MiniInventory.API\MiniInventory.API.csproj", "{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Core.Services", "MiniInventory.Core.Service\MiniInventory.Core.Services.csproj", "{19606FF3-1042-4C9E-AD98-48FE692E9FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Core.Services", "MiniInventory.Core.Service\MiniInventory.Core.Services.csproj", "{19606FF3-1042-4C9E-AD98-48FE692E9FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Infrastructure.EF", "MiniInventory.Infrastructure.EF\MiniInventory.Infrastructure.EF.csproj", "{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.Infrastructure.EF", "MiniInventory.Infrastructure.EF\MiniInventory.Infrastructure.EF.csproj", "{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
