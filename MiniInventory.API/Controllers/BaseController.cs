@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 namespace MiniInventory.API.Controllers;
-[Route("api/[controller]")]
+//[Route("api/[controller]")]
 [ApiController]
-//[Route("api/v{version:apiVersion}/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 
 public class BaseController : ControllerBase
 {

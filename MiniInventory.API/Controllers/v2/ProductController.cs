@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using MiniInventory.Core.Domain;
 using MiniInventory.Core.Domain.Model;
 
-namespace MiniInventory.API.Controllers.v1;
-[ApiVersion("1")]
+namespace MiniInventory.API.Controllers.v2;
+
+[ApiVersion("2")]
 public class ProductController : BaseController
 {
     private readonly IProductService _productService;

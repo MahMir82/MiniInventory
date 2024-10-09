@@ -23,18 +23,15 @@ public class DataSeeder
                             };
 
             _context.TransactionTypes.AddRange(items);
-            _context.SaveChanges();
-        }
-        if (!_context.Warehouses.Any())
-        {
-            var items = new List<Warehouse>
+
+            var itemsWarehouse = new List<Warehouse>
             {
                 new Warehouse {  WarehouseName = "Warehouse No.1",Location="Tehran" },
                 new Warehouse {  WarehouseName = "Warehouse No.2",Location="Isfahan"  },
                 new Warehouse {  WarehouseName = "Warehouse No.3",Location="Shiraz"  },
                             };
 
-            _context.Warehouses.AddRange(items);
+            _context.Warehouses.AddRange(itemsWarehouse);
             _context.SaveChanges();
         }
 

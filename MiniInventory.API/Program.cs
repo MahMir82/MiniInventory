@@ -11,8 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 builder.Services.CommonConfigurationService();
 builder.Services.EFConfigurationService(builder.Configuration);
 builder.Services.SQLConfigurationService(builder.Configuration);
@@ -30,13 +28,18 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
-    //    app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
-    //{
-    //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-    //    options.SwaggerEndpoint("/swagger/v2/swagger.json", "v2");
-    //    options.RoutePrefix = string.Empty;
-    //});
+    app.UseSwaggerUI(options =>
+    {
+        var descriptions = app.DescribeApiVersions();
+
+        // Build a swagger endpoint for each discovered API version
+        foreach (var description in descriptions)
+        {
+            var url = $"/swagger/{description.GroupName}/swagger.json";
+            var name = description.GroupName.ToUpperInvariant();
+            options.SwaggerEndpoint(url, name);
+        }
+    });
 }
 
 app.UseHttpsRedirection();

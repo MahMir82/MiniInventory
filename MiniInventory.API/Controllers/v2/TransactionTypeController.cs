@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using MiniInventory.Core.Domain;
 
-namespace MiniInventory.API.Controllers.v1;
-[ApiVersion("1")]
+namespace MiniInventory.API.Controllers.v2;
+
+[ApiVersion("2")]
+
 public class TransactionTypeController : BaseController
 {
     private readonly ITransactionTypeService _transactionTypeService;

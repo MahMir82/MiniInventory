@@ -1,6 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using MiniInventory.Core.Domain;
+﻿using Microsoft.EntityFrameworkCore;
 using MiniInventory.Core.EFServices;
 using MiniInventory.Infrastructure.EF;
 
@@ -15,10 +13,13 @@ public static class EFConfigurationServices
             options.UseSqlServer(connectionString);
         });
 
-        services.AddScoped<IProductService, ProductService>();
-        services.AddScoped<ITransactionService, TransactionService>();
-        services.AddScoped<ITransactionTypeService, TransactionTypeService >();
-        services.AddScoped<IWarehouseService, WarehouseService>();
+        services.AddScoped<ProductService>();
+        services.AddScoped<TransactionService>();
+        services.AddScoped<WarehouseService>();
+        //services.AddScoped<IProductService, ProductService>();
+        //services.AddScoped<ITransactionService, TransactionService>();
+        //services.AddScoped<ITransactionTypeService, TransactionTypeService>();
+        //services.AddScoped<IWarehouseService, WarehouseService>();
 
         return services;
     }

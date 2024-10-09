@@ -15,10 +15,15 @@ public static class SQLConfigurationServices
             options.UseSqlServer(connectionString);
         });
 
-        services.AddScoped<IProductService, ProductService>();
-        services.AddScoped<ITransactionService, TransactionService>();
-        services.AddScoped<ITransactionTypeService, TransactionTypeService >();
-        services.AddScoped<IWarehouseService, WarehouseService>();
+        services.AddScoped<ProductService>();
+        services.AddScoped<TransactionService>();
+        services.AddScoped<WarehouseService>();
+        services.AddScoped<ITransactionTypeService, TransactionTypeService>();
+
+        // services.AddScoped<IProductService, ProductService>();
+        //services.AddScoped<ITransactionService, TransactionService>();
+        //services.AddScoped<ITransactionTypeService, TransactionTypeService >();
+        //services.AddScoped<IWarehouseService, WarehouseService>();
 
         return services;
     }
