@@ -1,14 +1,7 @@
 ﻿
+using MiniInventory.Infrastructure.EF;
 
-
-using Mapster;
-using Microsoft.EntityFrameworkCore;
-using MiniInventory.Core.Domain;
-using MiniInventory.Core.Domain.Model;
-using MiniInventory.Infrastructure.Sql;
-using System.Xml.Serialization;
-
-namespace MiniInventory.Core.Services;
+namespace MiniInventory.Core.EFServices;
 public class TransactionTypeService : ITransactionTypeService
 {
     private readonly MiniInventoryContext _context;

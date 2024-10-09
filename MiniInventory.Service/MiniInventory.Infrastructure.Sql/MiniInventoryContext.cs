@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using Microsoft.EntityFrameworkCore;
 using MiniInventory.Core.Domain;
-using MiniInventory.Core.Domain.Model;
 
 namespace MiniInventory.Infrastructure.Sql;
 

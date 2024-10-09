@@ -1,12 +1,7 @@
 ﻿
-using Mapster;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using MiniInventory.Core.Domain;
-using MiniInventory.Core.Domain.Model;
 using MiniInventory.Infrastructure.Sql;
 
-namespace MiniInventory.Core.Services;
+namespace MiniInventory.Core.SQLServices;
 public class ProductService : IProductService
 {
     private readonly MiniInventoryContext _context;

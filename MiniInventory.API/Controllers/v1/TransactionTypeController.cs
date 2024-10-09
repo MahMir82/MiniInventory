@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using MiniInventory.Core.Domain;
 
 namespace MiniInventory.API.Controllers;

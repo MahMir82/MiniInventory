@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Builder;
 using MiniInventory.API.Utils;
 using MiniInventory.Core.Services;
 
@@ -12,8 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.CommonConfigurationService();
+builder.Services.EFConfigurationService(builder.Configuration);
+builder.Services.SQLConfigurationService(builder.Configuration);
 
-builder.Services.ConfigurationService(builder.Configuration);
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -27,6 +31,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    //    app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
+    //{
+    //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    //    options.SwaggerEndpoint("/swagger/v2/swagger.json", "v2");
+    //    options.RoutePrefix = string.Empty;
+    //});
 }
 
 app.UseHttpsRedirection();

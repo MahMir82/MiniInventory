@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using MiniInventory.Core.Domain;
 using MiniInventory.Core.Domain.Model;
 
 namespace MiniInventory.API.Controllers;
+
 
 public class WarehouseController : BaseController
 {

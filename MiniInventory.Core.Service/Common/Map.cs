@@ -1,8 +1,4 @@
 ﻿
-using Mapster;
-using MiniInventory.Core.Domain;
-using MiniInventory.Core.Domain.Model;
-
 namespace MiniInventory.Core.Services;
 //public class Map : Profile
 //{
@@ -22,9 +18,12 @@ public class Map : IRegister
     public void Register(TypeAdapterConfig config)
     {
         config.NewConfig<Product, ProductModel>();
-        config.NewConfig<Product, NewProductModel>();
+        config.NewConfig<NewProductModel, Product>();
+           
         config.NewConfig<Transaction, TransactionModel>();
-        config.NewConfig<Transaction, NewTransactionModel>();
+        config.NewConfig<NewTransactionModel,Transaction >()
+             .Map(r => r.TransactionDate, s => DateTime.Now);
+
         config.NewConfig<TransactionType, TransactionTypeModel>();
         config.NewConfig<Warehouse, WarehouseModel>();
     }

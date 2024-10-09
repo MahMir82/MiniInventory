@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniInventory.API", "MiniIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Core.Services", "MiniInventory.Core.Service\MiniInventory.Core.Services.csproj", "{19606FF3-1042-4C9E-AD98-48FE692E9FE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInventory.Infrastructure.EF", "MiniInventory.Infrastructure.EF\MiniInventory.Infrastructure.EF.csproj", "{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19606FF3-1042-4C9E-AD98-48FE692E9FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{8AF6A4BF-6658-443F-A9A5-2D7C06A5337C} = {4717F725-B003-4A7F-96C8-46F65F83C0ED}
 		{2B5E39AC-838C-4BF3-8099-2E3F3C7FF0DD} = {8C09EC47-7D4B-4868-B720-59B325F20A76}
 		{19606FF3-1042-4C9E-AD98-48FE692E9FE6} = {3CBB872C-3B55-4D26-BC92-FA16DDDA2E10}
+		{52890D2C-50D6-4252-BF31-1F5C0A1CA4A3} = {4717F725-B003-4A7F-96C8-46F65F83C0ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE6DAA49-F664-495C-A432-33E6F64ED679}

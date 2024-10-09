@@ -1,7 +1,4 @@
-﻿
-using MiniInventory.Core.Domain;
-using MiniInventory.Infrastructure.Sql;
-using System.Transactions;
+﻿using MiniInventory.Infrastructure.Sql;
 
 namespace MiniInventory.Core.Services;
 
